@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overlay de Twitch</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Overlay de Twitch con Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Incluye Tailwind CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS personalizado (opcional) -->
 </head>
-<body>
-    <div class="overlay">
-        <div class="texto-animado">¡Bienvenidos a mi stream!</div>
+<body class="bg-transparent">
+    <!-- Overlay -->
+    <div class="w-screen h-screen flex items-center justify-center bg-black bg-opacity-70">
+        <!-- Texto animado -->
+        <div class="text-white text-6xl font-bold animate-pulse">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+                ¡Bienvenidos a mi stream!
+            </span>
+        </div>
     </div>
 </body>
 </html>
